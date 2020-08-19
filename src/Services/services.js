@@ -40,7 +40,7 @@ export const getAllPatients = () => {
 };
 
 export const deletePatient = (id) => {
-  return axios.delete(`http://localhost:5000/api/${id}`).then((res) => {
+  return axios.delete(`/${id}`).then((res) => {
     return res.data;
   });
 };
