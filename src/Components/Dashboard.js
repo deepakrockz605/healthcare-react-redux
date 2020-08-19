@@ -96,7 +96,7 @@ class Dashboard extends PureComponent {
                       <thead>
                         <tr>
                           <th>Name</th>
-                          <th>Diagnosis</th>
+                          <th>Email</th>
                           <th>Mobile</th>
                           <th>Edit</th>
                           <th>Delete</th>
@@ -107,7 +107,7 @@ class Dashboard extends PureComponent {
                         {this.state.users.map((user) => (
                           <tr key={user._id}>
                             <td>{user.fullName}</td>
-                            <td>{user.diagnosis}</td>
+                            <td>{user.email}</td>
                             <td>{user.phone}</td>
                             <td>
                               <button
